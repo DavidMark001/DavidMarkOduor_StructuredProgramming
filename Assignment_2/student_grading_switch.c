@@ -17,8 +17,7 @@ int main() {
         scanf("%s", name);
         printf("Enter Marks: ");
         scanf("%d", &marks);
-
-        // switch needs a discrete value, so convert marks into a grade bracket (0-4)
+        
         int bracket = marks / 10;
         if (bracket > 10) bracket = 10; // cap for marks > 100
 
