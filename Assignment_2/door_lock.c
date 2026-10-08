@@ -1,8 +1,7 @@
 // Task 1: PIN-Based Door Lock System
 #include <stdio.h>
 #include <string.h>
-#include <unistd.h>  // for sleep() — remove if not supported on your compiler
-
+#include <unistd.h>  
 int main() {
     char correctPin[] = "1234";
     char inputPin[20];
@@ -63,7 +62,7 @@ int main() {
         printf("\nSystem locked! Wait for 5 seconds...\n");
         for (int i = 5; i >= 1; i--) {
             printf("%d...\n", i);
-            sleep(1);  // remove this line if sleep() isn't available
+            sleep(1); 
         }
         printf("You can try again now.\n");
     }
